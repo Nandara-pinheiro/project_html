@@ -1,0 +1,306 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    /*fonte extraída do Google fonts, para ter uma fonte específica para web, acrescentar primeiramente em link no html, depois acrescentar no css*/
+}
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    border-color: #088C19;    
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main {
+
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.enviar:hover {
+    background:darkorange;
+    transform: scale(1.2);
+
+}
+
+table {
+margin: 20px 0 40px;
+}
+
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+
+}
+/* css da página inicial */
+.banner {
+    width: 100%;
+    /*largura - ou seja a mesma proporção da minha página*/
+}
+.titulo-principal{
+    text-align: center;
+    /*texto alinhado ao centro*/
+    font-size: 2em;
+    /*em é a medida proporcional a pixels, ou seja minha fonte será o o dobro da minha fonte principal independente do seu tamanho*/
+    margin: 0 0 1em;
+    /*espaçamento para baixo, neste caso que seja proporcional ao tamanho da fonte*/
+    clear: left;
+    /*criado para limpar o float no utensilios*/
+    color: rgba(0,0,0,0.3);
+    /*rgb alfa*/
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+    /*o peso do texto esteja em negrito*/
+}
+
+.principal em{
+    font-style: italic;
+    /*todas as vezes que meu estilo esteja em, meu estilo da fonte será itálico*/
+}
+
+.utensilios {
+    width: 120px;
+    float:left ;
+    /*para que a imagem flutue, o texto começa a ficar em volta do elememto e todos os elementos abaixo do float são afetados, neste caso o float está na esquerda, asssim devemos criar um clear: left para limpar o float e ele não afete os demais elementos*/
+    margin: 0 20px 20px 0;
+    /* 0 para cima, 20px para a direita,20px para baixo e 0 para esqueda*/
+
+}
+
+.mapa {
+    padding:3em 0 ;
+    /*espaçamento interno*/
+    background: linear-gradient(#FEFEFE, #888888);
+    /*deixar as margens em gradiente, porém pode-se deixar em circulos - radio e também acrescentar o graus que desejamos, além de escolher a porcentagem de cor que desejada*/
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em ;
+    /*espaçamento externo*/
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+    /*altura da linha, que geralmente é 1, porém pode-se escolher o tamanho desejável*/
+}
+
+.itens:first-child {
+    font-weight: bold;
+    /*pseudo-elementos intes: com a classe pseudo elemento first-child, que vai pegar de todas as "crianças" o primeiro deles, podendo selecionar o last - último, ou nth () e entre parênteses escolher qual elemento deve ser marcado ou 2n, assim seleciono todos os elementos pares*/
+}
+.itens:before {
+    content: "★";
+}
+
+.imagem-beneficio{
+    width: 60%;
+    /*largura de 60%*/
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000; 
+    /* gera sombra em imagem*/
+}
+
+.imagem-beneficio:hover {
+    opacity: 0.3;
+
+}
+
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+    /*foi incorporado no html através do iframe e tratado no css.*/
+}
+/* Seletores de um  único p - ex: main + p {
+    background: blue;
+} desta forma seleciono apenas o parágrafo filho mais próximo da minha main.
+
+ex2: img +p {
+    background: red;
+} esse exemplo seleciona na cor red o primeiro "irmão" parágrafo depois da imagem.
+
+ex3: img ~ p {
+    background: yellow;
+} seleciono da cor yellow, todos os parágrafos ou seletores depois de uma imagem.
+
+ex4: .principal p not(missão){
+    background: orange
+} esse exemplo é de exclusão, nele quero selecionar todos os parágrafos que não são a missão.*/
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
